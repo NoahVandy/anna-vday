@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { StickyNote } from "./sticky-note"
-import { FirstText } from "./first-text"
-import { SecondText } from "./second-text"
+import FirstText from "./first-text"
+import SecondText from "./second-text"
 
 export default function Home() {
   const [showStickyNote, setShowStickyNote] = useState(false)

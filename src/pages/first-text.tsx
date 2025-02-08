@@ -4,7 +4,7 @@ interface FirstTextProps {
   onComplete: () => void
 }
 
-export const FirstText = ({ onComplete }: FirstTextProps) => {
+export default function FirstText({ onComplete }: FirstTextProps) {
   return (
     <TypewriterComponent
       options={{

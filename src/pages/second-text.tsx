@@ -1,6 +1,6 @@
 import TypewriterComponent from "typewriter-effect"
 
-export const SecondText = () => {
+export default function SecondText() {
   return (
     <TypewriterComponent
       options={{
