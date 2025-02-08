@@ -1,4 +1,3 @@
-import { CheckMark } from "@/svgs/check-mark"
 import { useState } from "react"
 import ConfettiExplosion from "react-confetti-explosion"
 
@@ -6,10 +5,15 @@ interface StickyNoteProps {
   onConfettiComplete: () => void
 }
 
+type Position = {
+  top: number
+  left: number
+}
+
 export const StickyNote = ({ onConfettiComplete }: StickyNoteProps) => {
   const [checkedBox, setCheckedBox] = useState<number>()
   const [isExploding, setIsExploding] = useState(false)
-  const [position, setPosition] = useState<any>()
+  const [position, setPosition] = useState<Position>()
 
   const handleCheckMark = (num: number) => {
     setCheckedBox((prev) => (prev === num ? undefined : num))

@@ -1,21 +1,7 @@
-import Image from "next/image"
-import { Geist, Geist_Mono } from "next/font/google"
-
-import TypewriterComponent from "typewriter-effect"
 import { useState } from "react"
 import { StickyNote } from "./sticky-note"
 import { FirstText } from "./first-text"
 import { SecondText } from "./second-text"
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
 
 export default function Home() {
   const [showStickyNote, setShowStickyNote] = useState(false)
