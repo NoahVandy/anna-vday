@@ -10,7 +10,7 @@ type Position = {
   left: number
 }
 
-export const StickyNote = ({ onConfettiComplete }: StickyNoteProps) => {
+export default function StickyNote({ onConfettiComplete }: StickyNoteProps) {
   const [checkedBox, setCheckedBox] = useState<number>()
   const [isExploding, setIsExploding] = useState(false)
   const [position, setPosition] = useState<Position>()

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { StickyNote } from "./sticky-note"
+import StickyNote from "./sticky-note"
 import FirstText from "./first-text"
 import SecondText from "./second-text"
 
